@@ -16,7 +16,7 @@ class Contact : NSObject, NSCoding {
             return nil
         }
         
-        // Because photo is an optional property of Meal, just use conditional cast.
+        // Because photo is an optional property of Contact, just use conditional cast.
         let photo = aDecoder.decodeObject(forKey: PropertyKey.photo) as? UIImage
         
         let phoneNumber = aDecoder.decodeObject(forKey: PropertyKey.phoneNumber) as? String
